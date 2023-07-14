@@ -1,0 +1,67 @@
+@import "../../../base";
+.bn-item {
+  .bn-inner {
+    position: relative;
+    clear: both;
+    border-radius: 10px;
+    overflow: hidden;
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 1s linear;
+    }
+    .bn-content {
+      top: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      left: 0;
+      padding: 0 50px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      @include tablet {
+        padding: 0 30px;
+      }
+      @include mobile {
+        padding: 0 20px;
+      }
+      .title {
+        font-weight: 700;
+        margin-bottom: 15px;
+        min-height: 100px;
+        color: #253d4e;
+        transition: 0.3s ease-in-out;
+        white-space: pre-line;
+        @include tablet {
+          min-height: 50px;
+        }
+        &:hover {
+          transform: translateY(-10%);
+        }
+      }
+      .bn-btn {
+        padding: 7px 8px 7px 12px;
+        font-size: 12px;
+        text-transform: none;
+        display: inline-flex;
+        flex-wrap: wrap;
+        line-height: 1.3;
+        transition: all 0.3s ease-in;
+        &:hover svg {
+          margin-left: 10px;
+        }
+        svg {
+          transition: 0.3s ease-in;
+        }
+      }
+    }
+  }
+}

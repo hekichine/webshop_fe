@@ -1,0 +1,55 @@
+@import "../../../base";
+.cls-item {
+  min-width: 160px;
+  .cls-inner {
+    padding: 0 12px;
+    position: relative;
+    background: #f4f6fa;
+    text-align: center;
+    border: 1px solid #f4f6fa;
+    border-radius: 10px;
+    padding: 20px 0px 18px 0px;
+    margin-bottom: 20px;
+    min-height: 180px;
+    transition: 0.2s;
+    overflow: hidden;
+    &:hover {
+      background: #fff;
+      border: 1px solid #bce3c9;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+      img {
+        transform: scale(1.1);
+      }
+      .cls-content {
+        .cls-title {
+          color: #3bb77e;
+        }
+      }
+    }
+    figure {
+      margin-bottom: 10px;
+      overflow: hidden;
+      img {
+        max-width: 80px;
+        aspect-ratio: 1;
+        display: inline-block;
+        border-radius: 10px;
+        transition: 0.25s ease-in-out;
+      }
+    }
+    .cls-content {
+      .cls-title {
+        color: #253d4e;
+        a {
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 1.2;
+          transition: 0.25s ease-in-out;
+          @include mobile {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

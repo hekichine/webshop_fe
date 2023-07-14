@@ -1,10 +1,9 @@
-import { useState } from "react";
-import Slideshow from "./components/Slideshow/Slideshow";
+import Homepage from "./components/Homepage/Homepage";
 
 function App() {
   return (
     <>
-      <Slideshow />
+      <Homepage />
     </>
   );
 }

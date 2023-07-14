@@ -1,0 +1,29 @@
+@import "../../base";
+.categories {
+  .section-inner {
+    margin-bottom: 50px;
+    @include tablet {
+      margin-bottom: 30px;
+    }
+    @include mobile {
+      margin-bottom: 20px;
+    }
+    ul {
+      @include mobile {
+        display: none !important;
+      }
+      li {
+        a {
+          padding: 0 10px;
+          background: none;
+          font-size: 16px;
+          color: #253d4e;
+          transition: 0.2s linear;
+          &:hover {
+            color: #3bb77eed;
+          }
+        }
+      }
+    }
+  }
+}

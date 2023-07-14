@@ -1,0 +1,11 @@
+@import "../../base";
+
+.banner {
+  margin-bottom: 50px;
+  @include tablet {
+    margin-bottom: 30px;
+  }
+  @include mobile {
+    margin-bottom: 20px;
+  }
+}
