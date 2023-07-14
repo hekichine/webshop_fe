@@ -6,12 +6,14 @@ import { Link } from "react-router-dom";
 
 import "./CollectionItem.scss";
 
-const CollectionItem = (props: {
+interface collection {
   image_url: string;
   title: string;
   count: number;
   bg_color: string;
-}) => {
+}
+
+const CollectionItem = (props: collection) => {
   return (
     <>
       <div className="cls-item">

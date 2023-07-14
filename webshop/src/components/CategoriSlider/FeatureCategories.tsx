@@ -19,7 +19,7 @@ const FeatureCategories = () => {
         <Container>
           <Row>
             <div className="head d-flex align-items-end mb-4 flex-wrap ">
-              <h3 className="me-3">Featured Categories</h3>
+              <h3 className="me-3 heading">Featured Categories</h3>
               <ul className="d-flex align-items-center">
                 <li>
                   <Link to={"/shop?categories=cake-milk"}>Cake & Milk</Link>
@@ -61,9 +61,9 @@ const FeatureCategories = () => {
                 1366: { width: 1366, slidesPerView: 8 },
               }}
             >
-              {data.map((el) => {
+              {data.map((el, index) => {
                 return (
-                  <SwiperSlide>
+                  <SwiperSlide key={index}>
                     <CollectionItem
                       image_url="../../../public/assets/cat-12.png"
                       title="cls"
