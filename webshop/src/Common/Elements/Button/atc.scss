@@ -1,0 +1,22 @@
+.atc-btn {
+  button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 6px 20px 6px 20px;
+    border-radius: 4px;
+    background-color: #def9ec;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    color: #3bb77e;
+    &:hover {
+      background-color: #3bb77e;
+      color: #fff;
+      transform: translateY(-3px);
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+    }
+  }
+}

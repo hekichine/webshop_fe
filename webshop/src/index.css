@@ -16,7 +16,11 @@ li {
 }
 a {
   text-decoration: none;
-  color: inherit;
+  color: #3bb77e;
+  transition: 0.25s ease-in;
+}
+a:hover {
+  color: #fdc040;
 }
 .section-inner .heading {
   font-weight: 700;
@@ -76,13 +80,47 @@ figure img {
 }
 @media (max-width: 1024px) {
   .section-inner .heading {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 28px;
+    line-height: 40px;
   }
 }
 @media (max-width: 768px) {
   .section-inner .heading {
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 24px;
+    line-height: 30px;
   }
+}
+.hover-up {
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.text-muted {
+  color: #b6b6b6 !important;
+}
+
+.hover-up:hover {
+  transform: translateY(-5px);
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-heading,
+.display-1,
+.display-2,
+.heading-sm-1 {
+  font-family: "Quicksand", sans-serif;
+  color: #253d4e;
+  font-weight: 700;
+  line-height: 1.2;
+}
+a,
+button,
+img,
+input,
+span,
+h4 {
+  transition: all 0.3s ease 0s;
 }

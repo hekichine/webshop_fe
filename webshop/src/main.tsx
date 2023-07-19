@@ -6,8 +6,6 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./Common/404/ErrorPage.tsx";
 
-import FeatureCategories from "./components/CategoriSlider/FeatureCategories.tsx";
-
 const router = createBrowserRouter([
   {
     path: "/",

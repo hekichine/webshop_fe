@@ -23,15 +23,15 @@ const Banner = () => {
 const data: { title: string; image_url: string }[] = [
   {
     title: "Everyday Fresh & \n Clean with Our\n Products",
-    image_url: "../../../public/banner-1.png",
+    image_url: "/banner-1.png",
   },
   {
     title: "Make your Breakfast\n Healthy and Easy",
-    image_url: "../../../public/banner-2.png",
+    image_url: "/banner-2.png",
   },
   {
     title: "The best Organic \n Products Online",
-    image_url: "../../../public/banner-3.png",
+    image_url: "/banner-3.png",
   },
 ];
 export default Banner;

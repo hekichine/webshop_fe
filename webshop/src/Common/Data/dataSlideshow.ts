@@ -5,11 +5,11 @@ export interface Item {
 const slideitem: Item[] = [
   {
     title: "Don’t miss amazing \n grocery deals",
-    img_url: "public/assets/slider-1.png",
+    img_url: "/assets/slider-1.png",
   },
   {
     title: "Fresh Vegetables \n Big discount",
-    img_url: "public/assets/slider-2.png",
+    img_url: "/assets/slider-2.png",
   },
 ];
 

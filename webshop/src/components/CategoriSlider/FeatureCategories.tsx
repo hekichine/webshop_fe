@@ -65,7 +65,7 @@ const FeatureCategories = () => {
                 return (
                   <SwiperSlide key={index}>
                     <CollectionItem
-                      image_url="../../../public/assets/cat-12.png"
+                      image_url="/assets/cat-12.png"
                       title="cls"
                       count={10}
                       bg_color="#FFFCEB"
